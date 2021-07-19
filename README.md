@@ -4,7 +4,7 @@ A Laravel Nova field for Laracash (https://github.com/andriichuk/laracash)
 
 ## Installation
 
-Use [composer](https://getcomposer.org/) to instal.
+Use [composer](https://getcomposer.org/) to install.
 
 ```bash
 composer require nicko170/laracash-nova-field
