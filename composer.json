@@ -1,0 +1,31 @@
+{
+    "name": "nicko170/laracash-nova-field",
+    "description": "A Laravel Nova field for Laracash (https://github.com/andriichuk/laracash)",
+    "keywords": [
+        "laravel",
+        "nova",
+        "laracash"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "andriichuk/laracash": "^v1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nicko170\\LaracashNovaField\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nicko170\\LaracashNovaField\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
