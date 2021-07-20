@@ -6,7 +6,7 @@
         "nova",
         "laracash"
     ],
-    "license": "MIT",
+    "license": "GNU GPLv3",
     "require": {
         "php": ">=7.1.0",
         "andriichuk/laracash": "^v1.0"
