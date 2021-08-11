@@ -20,6 +20,6 @@ class LaracashNovaField extends Field
         parent::__construct($name, $attribute, $resolveCallback);
         $this->displayUsing(fn(Money|null $value) => $value ? formatMoneyAsCurrency($value) : '')
             ->resolveUsing(fn(Money|null $value) => $value ? formatMoneyAsCurrency($value) : '')
-            ->fillUsing(fn($request, $model, $attribute) => $model->$attribute = Laracash::parser()->parseIntlCurrency($request->$attribute));
+            ->fillUsing(fn($request, $model, $attribute) => $model->$attribute = $request->$attribute ? Laracash::parser()->parseIntlCurrency($request->$attribute) : null);
     }
 }
